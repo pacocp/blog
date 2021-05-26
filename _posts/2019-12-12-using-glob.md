@@ -1,6 +1,12 @@
 ---
-title: Using glob for file retrieval
-published: true
+title: "Using glob for file retrieval"
+description: "Glob Python Package"
+layout: post
+toc: false
+comments: true
+hide: false
+search_exclude: true
+categories: [python,terminal]
 ---
 
 # When is *glob* useful?
