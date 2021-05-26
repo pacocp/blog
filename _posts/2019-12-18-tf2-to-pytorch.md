@@ -1,5 +1,5 @@
 ---
-title: Moving from Tensorflow 2.0 to Pytorch 
+title: "Moving from Tensorflow 2.0 to Pytorch"
 layout: post
 toc: false
 comments: true
