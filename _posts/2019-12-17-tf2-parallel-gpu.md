@@ -1,6 +1,11 @@
 ---
-title: Parallel training in Tensorflow 2.0 
-published: true
+title: "Parallel training in Tensorflow 2.0"
+layout: post
+toc: false
+comments: true
+hide: false
+search_exclude: true
+categories: [python,tensorflow]
 ---
 
 Recently I have been able to use 2 GPUs for model training. I was having problems while training with both of them (only one of them was being used).
