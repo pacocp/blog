@@ -4,18 +4,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Data me! | Blogs on machine learning and data in general.</title>
+<title>PIL converts NaNs images to zero value images | Data me!</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Data me!" />
+<meta property="og:title" content="PIL converts NaNs images to zero value images" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Blogs on machine learning and data in general." />
-<meta property="og:description" content="Blogs on machine learning and data in general." />
-<link rel="canonical" href="https://pacocp.es/blog/" />
-<meta property="og:url" content="https://pacocp.es/blog/" />
+<meta name="description" content="I was having problems with missing information in my problem. There were missing images which were read as NaNs image shape matrixes but at the end they were fed to the CNN." />
+<meta property="og:description" content="I was having problems with missing information in my problem. There were missing images which were read as NaNs image shape matrixes but at the end they were fed to the CNN." />
+<link rel="canonical" href="https://pacocp.es/blog/python/bugs/2020/03/07/PILNaNs.html" />
+<meta property="og:url" content="https://pacocp.es/blog/python/bugs/2020/03/07/PILNaNs.html" />
 <meta property="og:site_name" content="Data me!" />
-<meta property="og:image" content="https://pacocp.es/blog/images/logo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-07T00:00:00-06:00" />
 <script type="application/ld+json">
-{"url":"https://pacocp.es/blog/","@type":"WebSite","headline":"Data me!","image":"https://pacocp.es/blog/images/logo.png","name":"Data me!","description":"Blogs on machine learning and data in general.","@context":"https://schema.org"}</script>
+{"url":"https://pacocp.es/blog/python/bugs/2020/03/07/PILNaNs.html","@type":"BlogPosting","headline":"PIL converts NaNs images to zero value images","dateModified":"2020-03-07T00:00:00-06:00","datePublished":"2020-03-07T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://pacocp.es/blog/python/bugs/2020/03/07/PILNaNs.html"},"description":"I was having problems with missing information in my problem. There were missing images which were read as NaNs image shape matrixes but at the end they were fed to the CNN.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://pacocp.es/blog/feed.xml" title="Data me!" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -67,69 +68,53 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><h1 id="posts">Posts</h1>
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">PIL converts NaNs images to zero value images</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-03-07T00:00:00-06:00" itemprop="datePublished">
+        Mar 7, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#python">python</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#bugs">bugs</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>I was having problems with missing information in my problem. There were
+missing images which were read as NaNs image shape matrixes but at the end they
+were fed to the CNN.</p>
+
+<p>Debugging the Python code I realized that the function
+<code class="language-plaintext highlighter-rouge">transforms.ToPILImage()</code> 
+was converting the NaNs to zero values.</p>
 
 
-
-  
-
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
-
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
-
- 
-  
-
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/blog/python/bugs/2020/03/07/PILNaNs.html">
-    PIL converts NaNs images to zero value images
-    </a>
-</h3><p class="post-meta">Mar 7, 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/blog/jupyter/2020/02/20/test.html">
-    Fastpages Notebook Blog Post
-    </a>
-</h3><p class="post-meta-description">A tutorial of fastpages for Jupyter notebooks.</p><p class="post-meta">Feb 20, 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/blog/2020/01/13/count-values.html">
-    Count NaN values that are not NaN in Pandas DataFrame
-    </a>
-</h3><p class="post-meta">Jan 13, 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/blog/2020/01/10/python3-as-default.html">
-    How to set Python3 as default version on MacOS
-    </a>
-</h3><p class="post-meta">Jan 10, 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/blog/2019/12/18/tf2-to-pytorch.html">
-    Moving from Tensorflow 2.0 to Pytorch
-    </a>
-</h3><p class="post-meta">Dec 18, 2019</p>
-</li><li><h3>
-    <a class="post-link" href="/blog/2019/12/17/tf2-parallel-gpu.html">
-    Parallel training in Tensorflow 2.0
-    </a>
-</h3><p class="post-meta">Dec 17, 2019</p>
-</li><li><h3>
-    <a class="post-link" href="/blog/2019/12/17/combine-images.html">
-    Combine images vertically
-    </a>
-</h3><p class="post-meta">Dec 17, 2019</p>
-</li><li><h3>
-    <a class="post-link" href="/blog/python/terminal/2019/12/12/using-glob.html">
-    Using glob for file retrieval
-    </a>
-</h3><p class="post-meta-description">Glob Python Package</p><p class="post-meta">Dec 12, 2019</p>
-</li></ul>
-
-    </div>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="pacocp/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/python/bugs/2020/03/07/PILNaNs.html" hidden></a>
+</article>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/blog/"></data>
