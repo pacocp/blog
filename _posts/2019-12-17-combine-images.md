@@ -1,6 +1,11 @@
 ---
-title: Combine images vertically 
-published: true
+title: "Combine images vertically"
+layout: post
+toc: false
+comments: true
+hide: false
+search_exclude: true
+categories: [python,terminal]
 ---
 
 Recently I needed to combine a bunch of images for a book. Since I didn't want to use a software I thought it would be easier to combine them using Python with the following script (thanks to [Python Programming](https://pythonprogramming.altervista.org/join-all-images-vertically-or-horizontally/?doing_wp_cron=1576619477.2015759944915771484375)):
