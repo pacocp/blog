@@ -19,7 +19,7 @@ Usually I need to iterate over lots of CSV files. Imaging that you have loads of
 
 Following the example that has been explained before, imaging I want to retrieve all filenames for looping them and apply some operations after getting a Pandas Dataframe. This would be extremely easy with glob:
 
-```
+```python
 import pandas as pd
 import glob
 
@@ -30,7 +30,7 @@ for filename in glob.glob('path/to/folder/*.csv'):
 
 Making use of regular expressions, any kind of filename can be retrieved. For instance:
 
-```
+```python
 import glob
 
 glob.glob('./[0-9].*')
@@ -41,7 +41,7 @@ glob.glob('*izq*.csv')
 
 *glob* can also me used recursively using the **recursive** parameter. An example of its use:
 
-```
+```python
 import glob
 
 for filename in glob.glob('**/*.csv', recursive=True):
