@@ -1,6 +1,11 @@
 ---
 title: Moving from Tensorflow 2.0 to Pytorch 
-published: true
+layout: post
+toc: false
+comments: true
+hide: false
+search_exclude: true
+categories: [python,pytorch,tensorflow]
 ---
 
 I was having many issues with GPU memory management in a Transfer Learning problem when using Tensorflow 2.0 with Keras module. Even though I was using Inception V3 model with all the weights of the architecture freezed, the code ran out of memory. The weights of the model occupied only 98 MB therefore that wasn't the problem. Input shape was (299, 299, 3) so not huge images were being used, but I couldn't use a batch size higher than 16.
