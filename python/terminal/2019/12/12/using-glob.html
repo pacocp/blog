@@ -106,32 +106,32 @@ window.onload = wrap_img;
 
 <p>Following the example that has been explained before, imaging I want to retrieve all filenames for looping them and apply some operations after getting a Pandas Dataframe. This would be extremely easy with glob:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import pandas as pd
-import glob
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">import</span> <span class="nn">glob</span>
 
-for filename in glob.glob('path/to/folder/*.csv'):
-    data = pd.read_csv(filename)
-    # some operations here...
-</code></pre></div></div>
+<span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">glob</span><span class="p">.</span><span class="n">glob</span><span class="p">(</span><span class="s">'path/to/folder/*.csv'</span><span class="p">):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+    <span class="c1"># some operations here...
+</span></code></pre></div></div>
 
 <p>Making use of regular expressions, any kind of filename can be retrieved. For instance:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import glob
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">glob</span>
 
-glob.glob('./[0-9].*')
-glob.glob('*izq*.csv')
+<span class="n">glob</span><span class="p">.</span><span class="n">glob</span><span class="p">(</span><span class="s">'./[0-9].*'</span><span class="p">)</span>
+<span class="n">glob</span><span class="p">.</span><span class="n">glob</span><span class="p">(</span><span class="s">'*izq*.csv'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <h2 id="using-glob-recursively">Using <em>glob</em> recursively</h2>
 
 <p><em>glob</em> can also me used recursively using the <strong>recursive</strong> parameter. An example of its use:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import glob
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">glob</span>
 
-for filename in glob.glob('**/*.csv', recursive=True):
-    data = pd.read_csv(filename)
-    # some operations here...
-</code></pre></div></div>
+<span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">glob</span><span class="p">.</span><span class="n">glob</span><span class="p">(</span><span class="s">'**/*.csv'</span><span class="p">,</span> <span class="n">recursive</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+    <span class="c1"># some operations here...
+</span></code></pre></div></div>
 
 
   </div><!-- from https://github.com/utterance/utterances -->

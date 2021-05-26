@@ -16,48 +16,6 @@
     
   
     
-        ,"post3": {
-            "title": "How to set Python3 as default version on MacOS",
-            "content": "In order not to have to type everytime you want to run Python 3 . python3 . I wanted to link to the default version of Python. Then you need to use the following commands: . Install again Python 3 with brew: . brew install python . Look how it is installed: . ls -l /usr/local/bin/python* . Different versions should appear. We would create a new default python symlink to the version we want to use: . ln -s -f /user/local/bin/python3.7 /usr/local/bin/python . Exit the terminal. Now, if we type . python --version . we should see the corresponding version of Python we have linked. .",
-            "url": "https://pacocp.es/blog/2020/01/10/python3-as-default.html",
-            "relUrl": "/2020/01/10/python3-as-default.html",
-            "date": " • Jan 10, 2020"
-        }
-        
-    
-  
-    
-        ,"post4": {
-            "title": "Moving from Tensorflow 2.0 to Pytorch",
-            "content": "I was having many issues with GPU memory management in a Transfer Learning problem when using Tensorflow 2.0 with Keras module. Even though I was using Inception V3 model with all the weights of the architecture freezed, the code ran out of memory. The weights of the model occupied only 98 MB therefore that wasn’t the problem. Input shape was (299, 299, 3) so not huge images were being used, but I couldn’t use a batch size higher than 16. . After three days trying to work around this issue, I decided to port the code to Pytorch. And this is where the magic happends. I had zero problems when executing the code and with memory management. Everything worked smoothly. . There’s no way back. .",
-            "url": "https://pacocp.es/blog/2019/12/18/tf2-to-pytorch.html",
-            "relUrl": "/2019/12/18/tf2-to-pytorch.html",
-            "date": " • Dec 18, 2019"
-        }
-        
-    
-  
-    
-        ,"post5": {
-            "title": "Parallel training in Tensorflow 2.0",
-            "content": "Recently I have been able to use 2 GPUs for model training. I was having problems while training with both of them (only one of them was being used). . At the end, thanks to this issue thread, I knew that with the new eager mode, there exist a bug for multi gpu training. . In order to fix it, you need to disable eager mode using the following command: . import tensorflow as tf tf.compat.v1.disable_eager_execution() .",
-            "url": "https://pacocp.es/blog/2019/12/17/tf2-parallel-gpu.html",
-            "relUrl": "/2019/12/17/tf2-parallel-gpu.html",
-            "date": " • Dec 17, 2019"
-        }
-        
-    
-  
-    
-        ,"post6": {
-            "title": "Combine images vertically",
-            "content": "Recently I needed to combine a bunch of images for a book. Since I didn’t want to use a software I thought it would be easier to combine them using Python with the following script (thanks to Python Programming): . import numpy as np from PIL import Image import glob list_im = glob.glob(&#39;*.png&#39;) imgs = [ Image.open(i) for i in list_im ] # choose the minimum size and resize the other ones min_shape = sorted( [(np.sum(i.size), i.size ) for i in imgs])[0][1] imgs_comb = np.vstack( (np.asarray( i.resize(min_shape) ) for i in imgs ) ) imgs_comb = Image.fromarray( imgs_comb) imgs_comb.save( &#39;imagename.png&#39;) .",
-            "url": "https://pacocp.es/blog/2019/12/17/combine-images.html",
-            "relUrl": "/2019/12/17/combine-images.html",
-            "date": " • Dec 17, 2019"
-        }
-        
-    
   
     
   
