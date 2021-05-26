@@ -1,6 +1,11 @@
 ---
-title: How to set Python3 as default version on MacOS
-published: true
+title: "How to set Python3 as default version on MacOS"
+layout: post
+toc: false
+comments: true
+hide: false
+search_exclude: true
+categories: [python,macos
 ---
 
 In order not to have to type everytime you want to run Python 3
