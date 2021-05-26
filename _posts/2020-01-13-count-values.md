@@ -1,6 +1,11 @@
 ---
-title: Count NaN values that are not NaN in Pandas DataFrame
-published: true
+title: "Count NaN values that are not NaN in Pandas DataFrame"
+layout: post
+toc: false
+comments: true
+hide: false
+search_exclude: true
+categories: [python,pandas,tricks]
 ---
 
 I am working with a dataset that contains lots of missing values. However, when a value is missed it is not represented as NaN but as "--". In order to find how many missing values there are in an specific column I cannot use typical Pandas functions. Henceforth, I have worked it out by count the number of appereances of this character in the column and substract it to the total number of entries in the column:
