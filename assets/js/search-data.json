@@ -15,7 +15,7 @@
   
       "page1": {
           "title": "About Me",
-          "content": "Hello there! . My name is Paco, and I am PhD student at the Universidad de Granada under the supervision of professor L.J. Herrera&lt;/a&gt; and professor Ignacio Rojas . My thesis is focused on the integration of heterogeneous sources of biological information for cancer classification. . 💻 Languages: Python, R and C++&lt;/li&gt; | 📚 Libraries/Frameworks: Pytorch, Tensorflow, Keras, Pandas, Numpy, Django, Scikit-Learn and Matplotlib. | . In my spare time I like to play rugby 🏉, take long hikes ⛰️ and read a good book 📖! . This website is powered by fastpages. .",
+          "content": "Hello there! . My name is Paco, and I am PhD student at the Universidad de Granada under the supervision of professor L.J. Herrera&lt;/a&gt; and professor Ignacio Rojas. My thesis is focused on the integration of heterogeneous sources of biological information for cancer classification. . 💻 Languages: Python, R and C++&lt;/li&gt; | 📚 Libraries/Frameworks: Pytorch, Tensorflow, Keras, Pandas, Numpy, Django, Scikit-Learn and Matplotlib. | . In my spare time I like to play rugby 🏉, take long hikes ⛰️ and read a good book 📖! . This website is powered by fastpages. .",
           "url": "https://pacocp.es/blog/about/",
           "relUrl": "/about/",
           "date": ""
