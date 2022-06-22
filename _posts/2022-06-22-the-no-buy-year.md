@@ -7,7 +7,7 @@ published: true
 Lately I've been having a debate with myself.
 In a lot of cases, I feel that I am pretty intentional with the things that I have in my life.
 In areas like friendships, work or family, I just have what I need.
-However, and becuase I have taken up a few hobbies and I had a bigger budget, I have been buying more material stuff.
+However, and because I have taken up a few hobbies and I had a bigger budget, I have been buying more material stuff.
 I do not like this, and I would like to change that aspect of my life, or at least improve it.
 There are multiple books about minimalism, and I have read quite a few of them:
 - [Monk's Guide to a Clean House and Mind](https://www.goodreads.com/book/show/35656221-a-monk-s-guide-to-a-clean-house-and-mind)
@@ -18,7 +18,7 @@ However, I feel that I could be doing more, and that I am still buying a lot of 
 So I want to start my year of no buying things or, at least, "non-essential" things. 
 This list of necessary things might change, but this is how I am going to start approaching this new idea.
 Thins that I can buy:
-- Food, cleaning supplies, everything of daily used.
+- Food, cleaning supplies, everything of daily use.
 - Eating at restaurants.
 - Gifts for people.
 - If I am travelling, I can buy something that would remind me to that place. 
@@ -27,7 +27,7 @@ Thins that I can buy:
 I do not want to buy things that:
 - I already have something that does the job.
 - I do not want to upgrade the things that I have unless they are beyond repair.
-- Bargains just because it is a food opportunity to buy them.
+- Bargains just because it is a good opportunity to buy them.
 
 This will be my conditions to buy or not buy things.
 They are pretty vague, but that is how I feel now.
