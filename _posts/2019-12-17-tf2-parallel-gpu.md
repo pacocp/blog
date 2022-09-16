@@ -10,7 +10,7 @@ At the end, thanks to this [issue thread](https://github.com/tensorflow/tensorfl
 
 In order to fix it, you need to disable eager mode using the following command:
 
-```
+```python
 import tensorflow as tf
 tf.compat.v1.disable_eager_execution()
 ```
