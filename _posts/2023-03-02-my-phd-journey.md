@@ -4,7 +4,7 @@ title: Reflections on my Ph.D. journey
 published: true
 ---
 
-> This is a work in progress post. I will keep adding more things if I feel like something is missing :)
+**This is a work in progress post. I will keep adding more things if I feel like something is missing :)**
 
 I defended my Ph.D. thesis the 27th of January 2023 (a while back!), finally becoming a so-called doctor. It has been a weird Ph.D., which has been basically remote (thanks covid!) except for the last year and a few months of my first year. There are a lot of things that I have missed in comparison to a conventional Ph.D. But still, there are a few things that I think I have learnt during this period, and that maybe can be handy for aspiring Ph.D. students.
 

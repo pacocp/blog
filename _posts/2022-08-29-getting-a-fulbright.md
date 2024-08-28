@@ -4,7 +4,7 @@ title: Advice for getting a Fulbright scholarship
 published: true
 ---
 
-> **Disclaimer:** This is just my experience on the Fulbright process. This might vary between specialties, countries and backgrounds. Good luck!
+ **Disclaimer: This is just my experience on the Fulbright process. This might vary between specialties, countries and backgrounds. Good luck!**
 
 During the 2021-2022 academic year I spent a year at Stanford University with a Fulbright predoctoral scholarship from the Fulbright Spanish commission. I have been asked for advice from different people to apply for the scholarships, what is important to highlight in the project proposal and advice for the interview process. Here I am going to explain what are, for me, the most important aspects of the application process. The advice is specifically for predoctoral students that are applying for a research stay, this might differ from people applying to other categories inside the Fulbright scholarships.
 
