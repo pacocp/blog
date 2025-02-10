@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paco&#39;s Log</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content on Paco&#39;s Log</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2025, Frandicsco Carrillo-Perez.</copyright>
+    <lastBuildDate>Thu, 12 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using glob for file retrieval</title>
+      <link>http://localhost:1313/blog/using-glob-for-file-retrieval/</link>
+      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/using-glob-for-file-retrieval/</guid>
+      <description>&lt;h1 id=&#34;when-is-glob-useful&#34;&gt;When is &lt;em&gt;glob&lt;/em&gt; useful?&lt;/h1&gt;&#xA;&lt;p&gt;Usually I need to iterate over lots of CSV files. Imaging that you have loads of CSV files which contains the EMG (declared as an array of floats) information of different patients. You want to read them with Python&amp;rsquo;s library &lt;a href=&#34;https://pandas.pydata.org/&#34;&gt;Pandas&lt;/a&gt;. Having to declare each CSV  by hand and then pass it to Pandas would be utterly painfull. Insted, there exist an amazing Python library called &lt;a href=&#34;https://docs.python.org/3.6/library/glob.html&#34;&gt;glob&lt;/a&gt; that helps with this task.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using glob for file retrieval</title>
+      <link>http://localhost:1313/blog/glob/</link>
+      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/glob/</guid>
+      <description>&lt;h1 id=&#34;when-is-glob-useful&#34;&gt;When is &lt;em&gt;glob&lt;/em&gt; useful?&lt;/h1&gt;&#xA;&lt;p&gt;Usually I need to iterate over lots of CSV files. Imaging that you have loads of CSV files which contains the EMG (declared as an array of floats) information of different patients. You want to read them with Python&amp;rsquo;s library &lt;a href=&#34;https://pandas.pydata.org/&#34;&gt;Pandas&lt;/a&gt;. Having to declare each CSV  by hand and then pass it to Pandas would be utterly painfull. Insted, there exist an amazing Python library called &lt;a href=&#34;https://docs.python.org/3.6/library/glob.html&#34;&gt;glob&lt;/a&gt; that helps with this task.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
