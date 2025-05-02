@@ -12,7 +12,7 @@ date = "2025-05-02"
 I while back I had the idea of using cross-attention for implementing an early fusion model of my two modalities of choice: digital pathology and transcriptomics. I decided to go for it, since it was not available, and called it [Med-CrossViT](https://github.com/pacocp/Med-CrossViT). Instead of using two augmentations of the same image as input, this model uses two different modalities: bags digital pathology tiles features and RNA-Seq.
 
 An example of the original architecture can be seen below:
-[Image of the original architecture](../../assets/crossvit.png)
+[Image of the original architecture](https://github.com/pacocp/blog/blob/main/assets/crossvit.png)
 
 Instead of having two different branches (one for small patches and one for big patches), here we have two different modality heads. For digital pathology, a bag of tiles is used where a representation is obtained using a foundation model, and each patch is a token. For gene expression, the gene expression from a set of genes is projected using an embedder, that tokenize the expression, add positional encodings, and include a CLS token. Then, two transformer encoders are used (one per modality) and a cross-attention layer is used. Finally, two MLPs are used.
 
