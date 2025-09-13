@@ -1,6 +1,5 @@
 +++
-title = "The future of AI for biology needs to be multimodal, and that means we
-need to get or data right."
+title = "The future of AI for biology needs to be multimodal, and that means we need to get or data right."
 date = "2025-09-13"
 
 #
