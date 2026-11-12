@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="intro">
+  {{ .Content }}
+</div>
+{{ with .Site.GetPage "/blog" }}
+{{ $posts := .RegularPages.ByDate.Reverse }}
+<h2 class="section-heading">Recent writing</h2>
+{{ partial "post-list.html" (first 5 $posts) }}
+{{ if gt (len $posts) 5 }}<p class="all-posts-link"><a href="{{ .RelPermalink }}">All {{ len $posts }} posts →</a></p>{{ end }}
+{{ end }}
+{{ end }}

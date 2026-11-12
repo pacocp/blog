@@ -1,0 +1,11 @@
+{{- /* Expects a page collection as context. */ -}}
+<ul class="post-list">
+  {{ range . }}
+  <li>
+    <a href="{{ .RelPermalink }}">
+      <span class="post-list-title">{{ .Title }}</span>
+      <time datetime='{{ .Date.Format "2006-01-02" }}'>{{ .Date.Format (default "Jan 2, 2006" site.Params.dateFormat) }}</time>
+    </a>
+  </li>
+  {{ end }}
+</ul>

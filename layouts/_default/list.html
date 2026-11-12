@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{ if .Data.Singular }}
+<h1>Posts tagged “{{ .Title }}”</h1>
+<p><a href="{{ "blog" | relURL }}">← All posts</a></p>
+{{ else }}
+<h1>{{ with .Title }}{{ . }}{{ else }}Blog{{ end }}</h1>
+{{ .Content }}
+{{ end }}
+
+{{ range .Pages.GroupByDate "2006" }}
+<h2 class="year-heading">{{ .Key }}</h2>
+{{ partial "post-list.html" .Pages }}
+{{ else }}
+<p>No posts yet.</p>
+{{ end }}
+{{ end }}

@@ -2,16 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/blog/</loc>
-    <lastmod>2019-12-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2019-12-12T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/using-glob-for-file-retrieval/</loc>
-    <lastmod>2019-12-12T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/blog/blog/</loc>
+    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/glob/</loc>
+    <loc>http://localhost:1313/blog/blog/my-relationship-with-nature/</loc>
+    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/blog/reflections-on-my-ph.d.-journey/</loc>
+    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/blog/advice-for-getting-a-fulbright-scholarship/</loc>
+    <lastmod>2022-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/blog/the-no-buy-year-experiment/</loc>
+    <lastmod>2022-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/blog/ommiting-corrupted-images-inside-a-pytorch-dataloader/</loc>
+    <lastmod>2022-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/blog/pil-converts-nans-images-to-zero-value-images/</loc>
+    <lastmod>2020-03-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/blog/count-nan-values-that-are-not-nan-in-pandas-dataframe/</loc>
+    <lastmod>2020-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/blog/how-to-set-python3-as-default-version-on-macos/</loc>
+    <lastmod>2020-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/blog/combine-images-vertically/</loc>
+    <lastmod>2019-12-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/blog/moving-from-tensorflow-2.0-to-pytorch/</loc>
+    <lastmod>2019-12-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/blog/parallel-training-in-tensorflow-2.0/</loc>
+    <lastmod>2019-12-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/blog/using-glob-for-file-retrieval/</loc>
     <lastmod>2019-12-12T00:00:00+00:00</lastmod>
   </url>
 </urlset>

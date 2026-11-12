@@ -8,7 +8,7 @@ theme = 'hugo-bearblog'
 # Basic metadata configuration for your blog.
 title = "Paco's Log"
 author = "Francisco Carrillo-Perez"
-copyright = "Copyright © 2025, Frandicsco Carrillo-Perez."
+copyright = "Copyright © 2025, Francisco Carrillo-Perez."
 languageCode = "en-US"
 
 # Generate a nice robots.txt for SEO
@@ -50,3 +50,17 @@ ignoreErrors = ["error-disable-taxonomy"]
   # for details. An example TOML config that uses [ISO
   # 8601](https://en.wikipedia.org/wiki/ISO_8601) format:
   # dateFormat = "2006-01-02"
+
+  # Comments via giscus (https://giscus.app), stored in this repo's GitHub Discussions.
+  # Comments appear on posts once repoID and categoryID are filled in.
+  # Hide them on a single post with `comments = false` in its front matter.
+  [params.giscus]
+    repo = "pacocp/blog"
+    repoID = "R_kgDON3GI7A"          # e.g. "R_kgDO..."
+    category = "Comments"
+    categoryID = "DIC_kwDON3GI7M4DK-gM"      # e.g. "DIC_kwDO..."
+    lang = "en"
+
+# Syntax highlighting uses CSS classes so code blocks follow light/dark mode.
+[markup.highlight]
+  noClasses = false

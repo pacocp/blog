@@ -1,0 +1,10 @@
+{{- /* Overrides hugo-bearblog's inline styles. Bundles site CSS + light/dark syntax highlighting. */ -}}
+{{- $main := resources.Get "css/main.css" -}}
+{{- $light := resources.Get "css/chroma-light.css" -}}
+{{- $dark := resources.Get "css/chroma-dark.css" -}}
+{{- $darkWrapped := printf "@media (prefers-color-scheme: dark){%s}" $dark.Content | resources.FromString "css/chroma-dark-wrapped.css" -}}
+{{- $lightWrapped := printf "@media (prefers-color-scheme: light){%s}" $light.Content | resources.FromString "css/chroma-light-wrapped.css" -}}
+{{- $css := slice $main $lightWrapped $darkWrapped | resources.Concat "css/site.css" | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<meta name="theme-color" content="#fdfcfa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)">

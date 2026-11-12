@@ -1,0 +1,27 @@
+{{- /*
+  Comments powered by giscus (https://giscus.app), backed by GitHub Discussions.
+  Configure under [params.giscus] in hugo.toml. Disable per post with `comments = false` in front matter.
+*/ -}}
+{{- $g := site.Params.giscus -}}
+{{- if and $g $g.repoID $g.categoryID (ne .Params.comments false) -}}
+<section class="comments" id="comments">
+  <h2>Comments</h2>
+  <script src="https://giscus.app/client.js"
+          data-repo="{{ $g.repo }}"
+          data-repo-id="{{ $g.repoID }}"
+          data-category="{{ $g.category }}"
+          data-category-id="{{ $g.categoryID }}"
+          data-mapping="pathname"
+          data-strict="1"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="top"
+          data-theme="preferred_color_scheme"
+          data-lang="{{ default "en" (.Params.lang | default $g.lang) }}"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async>
+  </script>
+  <noscript>Enable JavaScript to view and post comments.</noscript>
+</section>
+{{- end -}}
