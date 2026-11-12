@@ -2,7 +2,28 @@
 {{ with .Site.GetPage "/blog" }}
 <a href="{{ .RelPermalink }}"{{ if or (eq $.RelPermalink .RelPermalink) (and $.IsPage (eq $.Section "blog")) }} aria-current="page"{{ end }}>Blog</a>
 {{ end }}
+{{- /* Every category page, including ones with only an _index.md and no posts yet. */ -}}
+{{ $cats := where (where site.Pages "Kind" "term") "Type" "categories" }}
+{{ with $cats }}
+<details class="nav-menu">
+  <summary{{ if eq $.Type "categories" }} aria-current="page"{{ end }}>Categories</summary>
+  <ul>
+    {{ range sort . "Title" }}
+    <li><a href="{{ .RelPermalink }}"{{ if eq .RelPermalink $.RelPermalink }} aria-current="page"{{ end }}>{{ .Title }} <span class="count">{{ with len .Pages }}{{ . }}{{ else }}soon{{ end }}</span></a></li>
+    {{ end }}
+  </ul>
+</details>
+{{ end }}
 {{ range $m := .Site.Menus.main }}
 {{ with .URL }}<a href="{{ . }}"{{ if eq . $.RelPermalink }} aria-current="page"{{ end }}>{{ $m.Name }}</a>{{ end }}
 {{ end }}
 {{ with .Site.Home.OutputFormats.Get "rss" }}<a href="{{ .RelPermalink }}">RSS</a>{{ end }}
+<script>
+  // Close the Categories menu on outside click or Escape.
+  document.addEventListener("click", function (e) {
+    document.querySelectorAll("details.nav-menu[open]").forEach(function (d) { if (!d.contains(e.target)) d.open = false; });
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") document.querySelectorAll("details.nav-menu[open]").forEach(function (d) { d.open = false; d.querySelector("summary").focus(); });
+  });
+</script>

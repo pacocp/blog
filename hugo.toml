@@ -29,11 +29,11 @@ ignoreErrors = ["error-disable-taxonomy"]
   category = "categories"
   tag = "tags"
 
-# Extra links in the top navigation (after Home and Blog).
-[[menus.main]]
-  name = "Interviews"
-  pageRef = "/categories/researcher-interviews"
-  weight = 10
+# Extra links in the top navigation (after Home, Blog and the Categories menu), e.g.:
+# [[menus.main]]
+#   name = "About"
+#   pageRef = "/about"
+#   weight = 10
 
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.
