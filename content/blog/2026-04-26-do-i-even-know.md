@@ -1,6 +1,7 @@
 +++
 title = "Do I even know what I am doing? Reflections on the use of AI coding assistants for ML work."
 date = "2026-04-26"
+categories = ["On AI"]
 
 #
 # description is optional

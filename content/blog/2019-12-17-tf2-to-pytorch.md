@@ -1,6 +1,7 @@
 +++
 title = "Moving from Tensorflow 2.0 to Pytorch"
 date = "2019-12-17"
+categories = ["Coding Tips"]
 
 #
 # description is optional

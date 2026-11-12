@@ -2,7 +2,7 @@
 {{ with .Site.GetPage "/blog" }}
 <a href="{{ .RelPermalink }}"{{ if or (eq $.RelPermalink .RelPermalink) (and $.IsPage (eq $.Section "blog")) }} aria-current="page"{{ end }}>Blog</a>
 {{ end }}
-{{ range .Site.Menus.main }}
-<a href="{{ .URL }}">{{ .Name }}</a>
+{{ range $m := .Site.Menus.main }}
+{{ with .URL }}<a href="{{ . }}"{{ if eq . $.RelPermalink }} aria-current="page"{{ end }}>{{ $m.Name }}</a>{{ end }}
 {{ end }}
 {{ with .Site.Home.OutputFormats.Get "rss" }}<a href="{{ .RelPermalink }}">RSS</a>{{ end }}

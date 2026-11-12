@@ -1,6 +1,7 @@
 +++
 title = "Reflections on my own attention"
 date = "2025-02-26"
+categories = ["Personal"]
 
 #
 # description is optional

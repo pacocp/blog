@@ -7,6 +7,10 @@
       <time datetime='{{ .Date.Format "2006-01-02" }}'>{{ .Date.Format (default "January 2, 2006" .Site.Params.dateFormat) }}</time>
       <span class="sep" aria-hidden="true">·</span>
       <span>{{ .ReadingTime }} min read</span>
+      {{ with .GetTerms "categories" }}
+      <span class="sep" aria-hidden="true">·</span>
+      <span>{{ range $i, $c := . }}{{ if $i }}, {{ end }}<a href="{{ $c.RelPermalink }}">{{ $c.LinkTitle }}</a>{{ end }}</span>
+      {{ end }}
     </div>
   </header>
   {{ end }}

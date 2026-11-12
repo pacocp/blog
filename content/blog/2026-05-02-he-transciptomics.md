@@ -1,6 +1,7 @@
 +++
 title = "Multimodal AI foundation models that combine digital pathology + transcriptomics: what has been done and what is coming"
 date = "2026-05-02"
+categories = ["Research"]
 
 #
 # description is optional

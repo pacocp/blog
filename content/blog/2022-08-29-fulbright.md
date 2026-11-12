@@ -1,6 +1,7 @@
 +++
 title = "Advice for getting a Fulbright scholarship"
 date = "2022-08-29"
+categories = ["Academia"]
 
 #
 # description is optional

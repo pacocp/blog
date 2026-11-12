@@ -1,6 +1,7 @@
 +++
 title = "The dumbification AI era, or how Lionel Shriver made me think about AI"
 date = "2026-06-07"
+categories = ["On AI"]
 
 #
 # description is optional

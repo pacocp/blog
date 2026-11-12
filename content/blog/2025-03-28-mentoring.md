@@ -1,6 +1,7 @@
 +++
 title = "On how a lack of mentoring can destroy your graduate life"
 date = "2025-03-28"
+categories = ["Academia"]
 
 #
 # description is optional

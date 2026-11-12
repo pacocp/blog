@@ -17,9 +17,23 @@ enableRobotsTXT = true
 # Generate "Bearblog"-like URLs !only!, see https://bearblog.dev/.
 disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
-[permalinks]
+[permalinks.page]
   blog = "/blog/:slug/"
+[permalinks.term]
   tags = "/blog/:slug"
+  categories = "/category/:slug/"
+
+# Group posts into sections. Add `categories = ["Researcher Interviews"]` to a post's
+# front matter; each category gets its own page at /category/<name>/.
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# Extra links in the top navigation (after Home and Blog).
+[[menus.main]]
+  name = "Interviews"
+  pageRef = "/categories/researcher-interviews"
+  weight = 10
 
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.

@@ -1,6 +1,7 @@
 +++
 title = "Combine images vertically"
 date = "2019-12-17"
+categories = ["Coding Tips"]
 
 #
 # description is optional

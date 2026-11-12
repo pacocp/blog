@@ -1,6 +1,7 @@
 +++
 title = "Doctorado en España: Guía basada en mi experiencia para sobrevivir (más o menos)"
 date = "2026-11-07"
+categories = ["Academia"]
 
 #
 # description is optional

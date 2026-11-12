@@ -1,11 +1,14 @@
 {{ define "main" }}
-{{ if .Data.Singular }}
-<h1>Posts tagged “{{ .Title }}”</h1>
-<p><a href="{{ "blog" | relURL }}">← All posts</a></p>
+{{ if eq .Kind "term" }}
+<p class="eyebrow">{{ if eq .Data.Plural "categories" }}Section{{ else }}Tag{{ end }}</p>
+<h1>{{ .Title }}</h1>
+{{ .Content }}
 {{ else }}
 <h1>{{ with .Title }}{{ . }}{{ else }}Blog{{ end }}</h1>
 {{ .Content }}
 {{ end }}
+
+{{ if or (eq .Kind "section") (eq .Data.Plural "categories") }}{{ partial "category-chips.html" . }}{{ end }}
 
 {{ range .Pages.GroupByDate "2006" }}
 <h2 class="year-heading">{{ .Key }}</h2>

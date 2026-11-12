@@ -1,6 +1,7 @@
 +++
 title = "Med-CrossViT: A WSI-RNA-Seq fusion model"
 date = "2025-05-02"
+categories = ["Research"]
 
 #
 # description is optional

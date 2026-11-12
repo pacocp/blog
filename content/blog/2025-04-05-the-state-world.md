@@ -1,6 +1,7 @@
 +++
 title = "The state of the world scares me, and I don’t know what to do about it"
 date = "2025-04-05"
+categories = ["Personal"]
 
 #
 # description is optional

@@ -1,6 +1,7 @@
 +++
 title = "The future of AI for biology needs to be multimodal, and that means we need to get our data right."
 date = "2025-09-13"
+categories = ["Research"]
 
 #
 # description is optional

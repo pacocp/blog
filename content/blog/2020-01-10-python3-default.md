@@ -1,6 +1,7 @@
 +++
 title = "How to set Python3 as default version on MacOS"
 date = "2020-01-10"
+categories = ["Coding Tips"]
 
 #
 # description is optional
