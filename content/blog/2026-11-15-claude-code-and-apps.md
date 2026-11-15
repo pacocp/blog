@@ -1,12 +1,12 @@
 +++
-title = “Claude “code allows me to create whatever I want”
-date = "2026-11-15”
-categories = [“AI”]
+title = "Claude code allows me to create whatever I want"
+date = "2026-11-15"
+categories = ["AI"]
 
 #
 # description is optional
 #
-# description = “Claude code is allowing me to create apps starting from zero.”
+# description = "Claude code is allowing me to create apps starting from zero."
 
 +++
 
